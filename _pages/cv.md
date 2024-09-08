@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 
-[Download CV(Sep 2024, pdf)](http://guanhuasun.github.io/files/CV_Sep_2024.pdf.pdf)
+[Download CV(Sep 2024)](http://guanhuasun.github.io/files/CV_Sep_2024.pdf)
 
 <!---
 Education
