@@ -12,7 +12,13 @@ redirect_from:
 Education
 ======
 * B.A. in Mathematics(Honor), Minor in Physics, New York University, 2019
+  *References: Charles Peskin, Leif Ristroph, and Miranda Holmes-Cerfon
 * Ph.D in Applied & Interdisciplinary Mathematics, University of Michigan, 2025 (expected)
+  *References: Daniel Forger(Advisor), Brendon Watson(Co-advisor)
+  
+Awards
+======
+
 
 <!---
 Work experience
