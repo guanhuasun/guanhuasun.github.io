@@ -9,18 +9,21 @@ redirect_from:
 
 {% include base_path %}
 
+
+[Download CV(Sep 2024, pdf)](http://guanhuasun.github.io/files/CV_Sep_2024.pdf.pdf)
+
+<!---
 Education
 ======
 * B.A. in Mathematics(Honor), Minor in Physics, New York University, 2019
   *References: Charles Peskin, Leif Ristroph, and Miranda Holmes-Cerfon
 * Ph.D in Applied & Interdisciplinary Mathematics, University of Michigan, 2025 (expected)
   *References: Daniel Forger(Advisor), Brendon Watson(Co-advisor)
-  
 Awards
 ======
 
 
-<!---
+
 Work experience
 ======
 * Summer 2015: Research Assistant
