@@ -14,7 +14,7 @@ Interests
 ======
 I have a general interest in math biology with a theme of modeling and simulation. My current research focuses on large-scale simulation of the mouse brain, where I use advanced computational techniques to explore how network connectivity influences the behavior of the network as a whole. I have also researched about fluid-structure interaction problems in physiology. 
 
-Besides research, I’m the co-founder of Veritas China (2015 - ), the largest student-run non-profit organization that aims to promote liberal arts education in China.
+Besides research, I’m the co-founder of [Veritas China](https://www.veritaschina.org/) (2015 - ), the largest student-run non-profit organization that aims to promote liberal arts education in China.
 
 Job Market
 ======
