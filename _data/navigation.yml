@@ -8,12 +8,12 @@ main:
 
   - title: "Teaching"
     url: /teaching/    
-    
-  - title: "Others"
-    url: /portfolio/
         
   - title: "Veritas China"
     url: /year-archive/
+
+  - title: "Others"
+    url: /portfolio/
     
   - title: "CV"
     url: /cv/
