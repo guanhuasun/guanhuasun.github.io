@@ -10,7 +10,7 @@ redirect_from:
 
 Starting from Sep 2025, I will be a Courant Instructor at the [Courant Institute of Mathematical Sciences](https://math.nyu.edu). 
 
-I obtained my PhD in Applied & Interdisciplinary Mathematics from the Department of Mathematics at [University of Michigan](https://lsa.umich.edu/math/graduates/GraduateStudentHandbook/applied-and-interdisciplinary-mathematics--aim-.html), advised by [Daniel Forger](https://websites.umich.edu/~forger/) and co-advised by [Brendon Watson](https://sites.google.com/view/watsonlab/home). Before that, I graduated from [New York University](https://math.nyu.edu/dynamic/) with a major in math and a minor in physics. I grew up in Nanjing, Jiangsu, China. 
+I obtained my PhD in Applied & Interdisciplinary Mathematics from the Department of Mathematics at University of Michigan, advised by [Daniel Forger](https://websites.umich.edu/~forger/) and co-advised by [Brendon Watson](https://sites.google.com/view/watsonlab/home). Before that, I graduated from New York University with a major in math and a minor in physics. I grew up in Nanjing, Jiangsu, China. 
 
 Research 
 ======
