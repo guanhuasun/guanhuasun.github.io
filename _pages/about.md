@@ -14,12 +14,12 @@ I obtained my PhD in Applied & Interdisciplinary Mathematics from the Department
 
 Research 
 ======
-I have a general interest in math biology with a theme of modeling and simulation. My current research focuses on large-scale simulation of the mouse brain, where I use advanced computational techniques to explore how network connectivity influences the behavior of the network as a whole. I have also researched about fluid-structure interaction problems in physiology. 
+I have a broad interest in mathematical biology, with a focus on modeling and simulation. My current research advances computational modeling of the mouse brain by: (1) leveraging cutting-edge experimental data to construct large-scale yet precise models, (2) developing efficient computational techniques to simulate these models, and (3) analyzing the resulting simulations to gain deeper insights into neuronal dynamics. In addition, I have conducted research on fluid–structure interaction problems in physiology.
+
+Education
+======
+Besides teaching math, I’m the co-founder of [Veritas China/唯理中国](https://www.veritaschina.org/) (2015 - ), the largest student-run non-profit organization that aims to promote liberal arts education in China.
 
 Other Interests
 ======
-I’m the co-founder of [Veritas China/唯理中国](https://www.veritaschina.org/) (2015 - ), the largest student-run non-profit organization that aims to promote liberal arts education in China.
-
-The site is under construction
-======
-
+I love books, music and cinema.
