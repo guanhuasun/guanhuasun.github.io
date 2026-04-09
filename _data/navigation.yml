@@ -10,9 +10,12 @@ main:
   #- title: "Teaching"
   #  url: /teaching/    
 
+  - title: "Projects"
+    url: /projects/
+
   - title: "CV/Statements"
     url: /cv/
-    
+
   - title: "Veritas China"
     url: http://veritaschina.org
 
