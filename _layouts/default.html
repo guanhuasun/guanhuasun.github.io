@@ -24,6 +24,25 @@ layout: compress
         <source src="{{ base_path }}/images/calder-bg-loop.webm" type="video/webm">
         <source src="{{ base_path }}/images/calder-bg-loop.mp4" type="video/mp4">
       </video>
+      <div class="video-background__clickarea">
+        <span class="video-background__tag">A small Calder mobile.</span>
+      </div>
+      <script>
+        (function() {
+          var area = document.querySelector('.video-background__clickarea');
+          var tag = area.querySelector('.video-background__tag');
+          var timer;
+          area.addEventListener('click', function(e) {
+            clearTimeout(timer);
+            tag.style.left = e.offsetX + 'px';
+            tag.style.top = e.offsetY + 'px';
+            tag.classList.remove('visible');
+            void tag.offsetWidth;
+            tag.classList.add('visible');
+            timer = setTimeout(function() { tag.classList.remove('visible'); }, 3000);
+          });
+        })();
+      </script>
     </div>
     {% endif %}
 

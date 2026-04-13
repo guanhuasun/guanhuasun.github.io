@@ -28,7 +28,7 @@ author_profile: true
     {% assign college = site.teaching | where_exp: "item", "item.level != 'high-school'" | sort: "date" | reverse %}
     {% for post in college %}
     <tr>
-      <td><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></td>
+      <td>{{ post.title }}</td>
       <td>{{ post.type }}</td>
       <td>{{ post.venue }}</td>
       <td>{{ post.semester }} {{ post.date | date: "%Y" }}</td>
@@ -37,7 +37,7 @@ author_profile: true
   </tbody>
 </table>
 
-<h2>High School Outreach</h2>
+<h2>Outreach</h2>
 
 <table class="teaching-table">
   <colgroup>
@@ -58,7 +58,7 @@ author_profile: true
     {% assign highschool = site.teaching | where: "level", "high-school" | sort: "date" | reverse %}
     {% for post in highschool %}
     <tr>
-      <td><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></td>
+      <td>{{ post.title }}</td>
       <td>{{ post.type }}</td>
       <td>{{ post.venue }}</td>
       <td>{{ post.semester }} {{ post.date | date: "%Y" }}</td>

@@ -23,4 +23,4 @@ Besides teaching math, I’m the co-founder of [Veritas China/唯理中国](http
 
 Other Interests
 ======
-I love books, music and cinema.
+Books, music and cinema.
