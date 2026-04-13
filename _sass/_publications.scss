@@ -1,0 +1,98 @@
+/* ==========================================================================
+   Publications — theme-grouped card grid
+   ========================================================================== */
+
+.pub-theme__heading {
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+  border-bottom: 2px solid $primary-color;
+  padding-bottom: 0.3rem;
+}
+
+.pub-theme__intro {
+  color: $gray;
+  font-size: $type-size-6;
+  margin-bottom: 1rem;
+}
+
+/* Responsive grid: auto-fit collapses to 1 col on mobile, expands to 2–3 */
+.pub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Individual card */
+.pub-card {
+  background: $body-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pub-card__image {
+  margin-bottom: 0.75rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+  }
+}
+
+.pub-card__title {
+  font-size: $type-size-5;
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
+
+.pub-card__meta {
+  font-size: $type-size-6;
+  color: $gray;
+  margin-bottom: 0.5rem;
+}
+
+.pub-card__description {
+  font-size: $type-size-6;
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+
+  p {
+    margin-bottom: 0.4em;
+  }
+}
+
+.pub-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.pub-card__link {
+  display: inline-block;
+  font-size: $type-size-7;
+  padding: 0.2em 0.6em;
+  border: 1px solid $link-color;
+  border-radius: $border-radius;
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    background: $link-color;
+    color: $body-color;
+  }
+}

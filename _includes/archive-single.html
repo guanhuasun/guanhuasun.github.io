@@ -40,6 +40,13 @@
 
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          {% if post.lecture_notes %}
+            <ul class="lecture-notes">
+              {% for note in post.lecture_notes %}
+                <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}

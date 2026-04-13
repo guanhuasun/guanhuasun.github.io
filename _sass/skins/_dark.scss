@@ -1,0 +1,32 @@
+// Skin: dark
+// Dark background, light text, desaturated accent colors.
+// Uses the same system sans-serif stack as classic.
+//
+// Overrides _variables.scss defaults — imported before any consumers.
+
+// Colors
+$background-color           : #1a1a2e;
+$body-color                 : #1a1a2e;
+$text-color                 : #d4d4d8;
+$code-background-color      : #16213e;
+$code-background-color-dark : #0f172a;
+
+$gray                       : #9ca3af;
+$dark-gray                  : #d4d4d8;
+$darker-gray                : #e5e7eb;
+$light-gray                 : #4b5563;
+$lighter-gray               : #374151;
+
+$primary-color              : #94a3b8;
+$info-color                 : #67b8d6;
+$success-color              : #6ee7b7;
+$warning-color              : #fbbf24;
+$danger-color               : #f87171;
+
+$link-color                 : #67b8d6;
+$link-color-hover           : mix(#fff, $link-color, 20%);
+$link-color-visited         : mix(#fff, $link-color, 10%);
+$masthead-link-color        : #94a3b8;
+$masthead-link-color-hover  : mix(#fff, $masthead-link-color, 25%);
+
+$border-color               : #374151;

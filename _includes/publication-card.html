@@ -1,0 +1,46 @@
+{% include base_path %}
+
+<div class="pub-card">
+  {% if post.image %}
+    <div class="pub-card__image">
+      <img src=
+        {% if post.image contains "://" %}
+          "{{ post.image }}"
+        {% else %}
+          "{{ post.image | prepend: '/images/' | prepend: base_path }}"
+        {% endif %}
+        alt="{{ post.title }}">
+    </div>
+  {% endif %}
+
+  <h3 class="pub-card__title">
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}">{{ post.title }}</a>
+    {% else %}
+      {{ post.title }}
+    {% endif %}
+  </h3>
+
+  <p class="pub-card__meta">
+    <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
+  </p>
+
+  {% if post.description %}
+    <div class="pub-card__description">
+      {{ post.description | markdownify }}
+    </div>
+  {% endif %}
+
+  <div class="pub-card__links">
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" class="pub-card__link">PDF</a>
+    {% endif %}
+    {% if post.arxiv %}
+      <a href="{{ post.arxiv }}" class="pub-card__link">arXiv</a>
+    {% endif %}
+    {% if post.doi %}
+      <a href="{{ post.doi }}" class="pub-card__link">DOI</a>
+    {% endif %}
+    <a href="{{ base_path }}{{ post.url }}" class="pub-card__link">Details</a>
+  </div>
+</div>

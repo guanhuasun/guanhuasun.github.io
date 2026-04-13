@@ -1,0 +1,9 @@
+// Skin: classic
+// Mirrors the default academicpages look. Present as a baseline so users can
+// diff against it when building new skins.
+//
+// How skins work: _variables.scss is imported first (without !default), then
+// this file. Any variable re-assigned here overwrites the default before
+// consumers (_base, _masthead, etc.) read them.
+
+// No overrides — classic IS the default.

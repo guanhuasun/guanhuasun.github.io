@@ -12,6 +12,7 @@
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
+@import "skins/{{ site.skin | default: 'classic' }}";
 @import "mixins";
 @import "vendor/susy/susy";
 
@@ -32,6 +33,7 @@
 
 @import "page";
 @import "archive";
+@import "publications";
 @import "sidebar";
 
 @import "vendor/font-awesome/fontawesome";

@@ -7,6 +7,62 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<h2>College Courses</h2>
+
+<table class="teaching-table">
+  <colgroup>
+    <col style="width:35%">
+    <col style="width:20%">
+    <col style="width:30%">
+    <col style="width:15%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Course</th>
+      <th>Role</th>
+      <th>Institution</th>
+      <th>Term</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign college = site.teaching | where_exp: "item", "item.level != 'high-school'" | sort: "date" | reverse %}
+    {% for post in college %}
+    <tr>
+      <td><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></td>
+      <td>{{ post.type }}</td>
+      <td>{{ post.venue }}</td>
+      <td>{{ post.semester }} {{ post.date | date: "%Y" }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h2>High School Outreach</h2>
+
+<table class="teaching-table">
+  <colgroup>
+    <col style="width:35%">
+    <col style="width:20%">
+    <col style="width:30%">
+    <col style="width:15%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Course</th>
+      <th>Role</th>
+      <th>Program</th>
+      <th>Term</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign highschool = site.teaching | where: "level", "high-school" | sort: "date" | reverse %}
+    {% for post in highschool %}
+    <tr>
+      <td><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></td>
+      <td>{{ post.type }}</td>
+      <td>{{ post.venue }}</td>
+      <td>{{ post.semester }} {{ post.date | date: "%Y" }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

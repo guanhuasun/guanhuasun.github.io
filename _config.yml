@@ -6,6 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
+skin                     : "classic"  # classic, serif-academic, dark
 locale                   : "en-US"
 title                    : "Guanhua Sun"
 title_separator          : "-"
@@ -86,7 +87,7 @@ author:
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=4zRpT3YAAAAJ&hl=en"
-  email            : "ronsun@umich.edu"
+  email            : "gs2658@nyu.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

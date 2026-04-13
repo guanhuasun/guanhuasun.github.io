@@ -1,0 +1,9 @@
+# Publication themes — controls grouping order on /publications/.
+
+- slug: computational-neuroscience
+  name: "Computational Neuroscience"
+  intro: "Large-scale simulation of the mouse brain, cortical dynamics, and sleep."
+
+- slug: fluid-mechanics
+  name: "Fluid Mechanics & Physics"
+  intro: "Fluid-structure interaction, biological flows, and flight stability."

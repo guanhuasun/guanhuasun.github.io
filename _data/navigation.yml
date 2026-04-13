@@ -1,26 +1,16 @@
-# main links links
+# main links
 main:
   - title: "Publications"
-    url: https://scholar.google.com/citations?user=4zRpT3YAAAAJ&hl=en
-    #/publications/
-
-  #- title: "Talks"
-  #  url: /talks/    
-
-  #- title: "Teaching"
-  #  url: /teaching/    
+    url: /publications/
 
   - title: "Projects"
     url: /projects/
+
+  - title: "Teaching"
+    url: /teaching/
 
   - title: "CV/Statements"
     url: /cv/
 
   - title: "Veritas China"
     url: http://veritaschina.org
-
- # - title: "Others"
- #   url: /year-archive/
-    
- # - title: "Guide"
- #   url: /markdown/

@@ -1,0 +1,106 @@
+# Structured CV data — rendered by _pages/cv.md.
+
+interests: >
+  My current research focuses on large-scale simulation of the mouse brain,
+  where I use advanced computational techniques to explore how network connectivity
+  and neuronal dynamics influence the collective behavior of the cortical network.
+  Prior to neuroscience, I worked on fluid-structure interaction problems in physics
+  and physiology. Besides research, I'm the co-founder of Veritas China (2015–),
+  the largest student-run non-profit organization that aims to promote liberal arts
+  education in China.
+
+education:
+  - degree: "Ph.D., Applied Interdisciplinary Mathematics"
+    institution: "University of Michigan"
+    years: "2025"
+    details: "Advisors: Daniel B. Forger and Brendon Watson"
+
+  - degree: "B.A., Mathematics with Honors, Minor in Physics"
+    institution: "New York University"
+    years: "2019"
+    details: "References: Charles Peskin, Leif Ristroph, and Miranda Holmes-Cerfon"
+
+awards:
+  - name: "Cameron & Jon Courtney Scholarship"
+    org: "Department of Mathematics, University of Michigan"
+    years: "2023–2024"
+  - name: "MCAIM Award"
+    org: "University of Michigan"
+    years: "2022–2023"
+  - name: "EBRS Poster Award"
+    org: "European Biological Rhythms Society"
+    years: "2022"
+  - name: "Mathematics Award"
+    org: "Courant Institute of Mathematical Sciences"
+    years: "2019"
+  - name: "Dean's Undergraduate Research Funds"
+    org: "College of Arts and Science, New York University"
+    years: "2017–2018"
+  - name: "Presidential Honors Scholar"
+    org: "College of Arts and Sciences, New York University"
+    years: "2015–2016"
+
+talks:
+  - title: "Simulation of projection-based connectome reproduces cortical responses to different sensory stimuli"
+    venue: "Society for Neuroscience"
+    location: "Chicago, US"
+    date: "Oct 2024"
+  - title: "Spatiotemporal patterns in large-scale cortical simulations"
+    venue: "Courant Institute of Mathematical Sciences"
+    location: "New York, US"
+    date: "Apr 2024"
+  - title: "How a pencil rolls down a slope?"
+    venue: "Math Club"
+    location: "Ann Arbor, US"
+    date: "Feb 2024"
+  - title: "NeuroWiz — A platform for large-scale neuronal simulation"
+    venue: "Nanosymposium, Society for Neuroscience"
+    location: "Washington DC, US"
+    date: "Nov 2023"
+  - title: "Spontaneous Sleep Wake Transition Induced by Synaptic Weight Dynamics"
+    venue: "Courant Institute of Mathematical Sciences"
+    location: "New York, US"
+    date: "May 2023"
+  - title: "Spontaneous Sleep Wake Transition Induced by Synaptic Weight Dynamics"
+    venue: "Society for Neuroscience"
+    location: "San Diego, US"
+    date: "Nov 2022"
+  - title: "Flip a Biased Coin"
+    venue: "Math Club"
+    location: "Ann Arbor, US"
+    date: "Sep 2022"
+  - title: "Spontaneous Sleep Wake Transition Induced by Synaptic Weight Dynamics"
+    venue: "European Biological Rhythms Society"
+    location: "Zurich, CH"
+    date: "Aug 2022"
+  - title: "Why do we sleep: three sleeping hypothesis"
+    venue: "MCAIM Graduate Seminar"
+    location: "Ann Arbor, US"
+    date: "Oct 2021"
+  - title: "The Cheerios Effect"
+    venue: "Math Club"
+    location: "Ann Arbor, US"
+    date: "Sep 2021"
+
+organization:
+  - role: "Coordinator"
+    what: "Computational Neuroscience Seminar"
+    org: "Courant Institute"
+    url: "https://math.nyu.edu/dynamic/calendars/seminars/computational-neuroscience-seminar/"
+    years: "2025–"
+  - role: "Co-organizer"
+    what: "MCAIM Graduate Seminar"
+    org: "University of Michigan"
+    url: "https://lsa.umich.edu/math/seminars/seminars-and-colloquia/mcaim-graduate-seminar.html"
+    years: "2022–2023"
+  - role: "Co-organizer"
+    what: "Student Applied Math Seminar"
+    org: "University of Michigan"
+    url: "https://lsa.umich.edu/math/seminars/seminars-and-colloquia/student-aim-seminar.html"
+    years: "2021–2023"
+
+professional:
+  - role: "Co-founder and President"
+    org: "Veritas China"
+    url: "https://veritaschina.org"
+    years: "2015–"

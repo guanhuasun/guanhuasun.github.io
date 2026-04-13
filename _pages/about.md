@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Starting from Sep 2025, I will be a Courant Instructor at the [Courant Institute of Mathematical Sciences](https://math.nyu.edu). 
+I am currently a Courant Instructor/Assistant Professor at the [Courant Institute of Mathematical Sciences](https://math.nyu.edu). 
 
 I obtained my PhD in Applied & Interdisciplinary Mathematics from the Department of Mathematics at University of Michigan, advised by [Daniel Forger](https://websites.umich.edu/~forger/) and co-advised by [Brendon Watson](https://sites.google.com/view/watsonlab/home). Before that, I graduated from New York University with a major in math and a minor in physics. I grew up in Nanjing, Jiangsu, China. 
 

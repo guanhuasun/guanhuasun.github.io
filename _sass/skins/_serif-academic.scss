@@ -1,0 +1,30 @@
+// Skin: serif-academic
+// Georgia-based serif body, warm off-white background, muted navy accents.
+// Evokes the feel of a math paper or academic monograph.
+//
+// Overrides _variables.scss defaults — imported before any consumers.
+
+// Typography
+$global-font-family         : Georgia, "Times New Roman", serif;
+$header-font-family         : Georgia, "Times New Roman", serif;
+$caption-font-family        : Georgia, serif;
+
+// Colors
+$background-color           : #faf8f5;
+$body-color                 : #faf8f5;
+$text-color                 : #2c2c2c;
+$code-background-color      : #f2efe9;
+
+$primary-color              : #2b4c7e;
+$info-color                 : #2b4c7e;
+$link-color                 : #2b4c7e;
+$link-color-hover           : mix(#000, $link-color, 25%);
+$link-color-visited         : mix(#000, $link-color, 15%);
+$masthead-link-color        : #2b4c7e;
+$masthead-link-color-hover  : mix(#000, $masthead-link-color, 25%);
+
+$border-color               : #e0dbd3;
+
+$gray                       : #6b6b6b;
+$dark-gray                  : #3a3a3a;
+$lighter-gray               : #e8e4dd;
