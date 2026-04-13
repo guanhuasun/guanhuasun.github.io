@@ -41,6 +41,8 @@
     {% if post.doi %}
       <a href="{{ post.doi }}" class="pub-card__link">DOI</a>
     {% endif %}
-    <a href="{{ base_path }}{{ post.url }}" class="pub-card__link">Details</a>
+    {% if post.puburl %}
+      <a href="{{ post.puburl }}" class="pub-card__link">Link</a>
+    {% endif %}
   </div>
 </div>
