@@ -1,0 +1,19 @@
+.video-background {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 45vw;
+  height: 50vh;
+  z-index: -1;
+  pointer-events: none;
+
+  // Feather the edges into the white page background
+  mask-image: radial-gradient(ellipse at 100% 100%, black 30%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse at 100% 100%, black 30%, transparent 70%);
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
