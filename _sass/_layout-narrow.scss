@@ -1,0 +1,345 @@
+/* ==========================================================================
+   LAYOUT — NARROW (single 720px centered column)
+   Scoped to body.layout-narrow — activated by modern-plex / modern-helvetica.
+   ========================================================================== */
+
+$narrow-width: 960px;
+
+// Paint the page background on <html> so the body can stay a local
+// stacking context — this keeps the Calder video (z-index: -1, fixed)
+// visible in front of the paper color, not hidden behind it.
+html {
+  background-color: $background-color;
+}
+
+.layout-narrow {
+  background: transparent;
+  isolation: isolate;  // makes z-index:-1 children (video) render above html bg
+  padding-bottom: 3em;  // trim the theme's 9em so the homepage fits one viewport
+
+  // Override Susy container with a fixed max-width centered column
+  #main {
+    max-width: $narrow-width;
+    margin: 28px auto 48px;
+    padding: 0 24px;
+    float: none;
+
+    @include breakpoint($x-large) {
+      max-width: $narrow-width;
+    }
+  }
+
+  // Sidebar: hide entirely; its content is rendered inline on the homepage
+  // via the redesigned author-profile include.
+  .sidebar {
+    display: none;
+  }
+
+  // Page and archive wrappers — remove Susy spans, become full-width
+  .page,
+  .archive {
+    width: 100%;
+    float: none;
+    padding: 0;
+
+    @include breakpoint($large) {
+      width: 100%;
+      float: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .page__inner-wrap,
+  .page__content,
+  .page__meta,
+  .page__share {
+    width: 100%;
+    float: none;
+  }
+
+  // Body typography — shared across both modern skins
+  body,
+  .page__content,
+  .archive {
+    font-family: $global-font-family;
+    color: $text-color;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  // Headings use the header font (sans in modern-plex, Helvetica in modern-helvetica)
+  h1, h2, h3, h4, h5, h6,
+  .page__title,
+  .archive__subtitle {
+    font-family: $header-font-family;
+    color: $text-color;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .page__title {
+    font-size: 2rem;
+    margin: 0 0 1.5rem;
+    line-height: 1.2;
+  }
+
+  .page__content h2 {
+    font-size: 1.3125rem;
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .page__content h3 {
+    font-size: 1.0625rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .page__content p,
+  .archive p {
+    margin: 0 0 0.85rem;
+  }
+
+  // Links: IBM blue, underline on hover
+  a {
+    color: $link-color;
+    text-decoration: none;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: $link-color-hover;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+
+  // About-section h2 immediately after the home header should be tight
+  .home-header + h2 {
+    margin-top: 1rem;
+  }
+}
+
+/* ==========================================================================
+   MASTHEAD — flat horizontal nav for narrow layout
+   ========================================================================== */
+
+.layout-narrow {
+  .masthead {
+    border-bottom: 1px solid $border-color;
+    background: $background-color;
+
+    &__inner-wrap {
+      max-width: $narrow-width;
+      margin: 0 auto;
+      padding: 16px 24px;
+      font-family: $header-font-family;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+
+      @include breakpoint($x-large) {
+        max-width: $narrow-width;
+      }
+    }
+  }
+
+  .masthead__menu-item {
+    a {
+      color: $masthead-link-color;
+      padding: 6px 0;
+
+      &:hover {
+        color: $masthead-link-color-hover;
+        text-decoration: none;
+      }
+    }
+
+    &--lg {
+      padding-right: 1.5em;
+      font-weight: 600;
+    }
+  }
+
+  .greedy-nav {
+    background: transparent;
+
+    .visible-links li {
+      padding-right: 1.25em;
+
+      &:last-child { padding-right: 0; }
+    }
+
+    button {
+      background: transparent;
+      border: none;
+    }
+  }
+}
+
+/* ==========================================================================
+   HOME HEADER — compact inline photo + name + contact links
+   ========================================================================== */
+
+.home-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0 0 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid $border-color;
+
+  &__photo {
+    flex-shrink: 0;
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__name {
+    font-family: $header-font-family;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+  }
+
+  &__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    font-family: $sans-serif;
+    font-size: 0.875rem;
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: $gray;
+      text-decoration: none;
+
+      i {
+        margin-right: 4px;
+        font-size: 0.85em;
+      }
+
+      &:hover {
+        color: $link-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Responsive: stack vertically on narrow screens
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+/* ==========================================================================
+   BUTTONS, TABLES, FOOTER, VIDEO TAG — scoped to narrow layout
+   ========================================================================== */
+
+.layout-narrow {
+  // Sharp-corner buttons
+  .btn {
+    border-radius: 0;
+    font-family: $sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 10px 18px;
+    letter-spacing: 0.01em;
+    box-shadow: none;
+
+    &--inverse {
+      color: $text-color !important;
+      background: transparent;
+      border: 1px solid $text-color !important;
+
+      &:hover {
+        background: $text-color;
+        color: $body-color !important;
+      }
+    }
+  }
+
+  // Teaching table — clean, borderless
+  .teaching-table {
+    border: none;
+    font-family: $global-font-family;
+    font-size: 0.9rem;
+
+    thead {
+      background: transparent;
+      border-bottom: 2px solid $text-color;
+    }
+
+    th {
+      padding: 0.5em 0.75em 0.5em 0;
+      font-family: $sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: $text-color;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    td {
+      padding: 0.65em 0.75em 0.65em 0;
+      border-right: none;
+      border-bottom: 1px solid $border-color;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+  }
+
+  // Footer — inherit from _footer.scss but enforce tokens
+  .page__footer {
+    background: transparent;
+    border: none;
+
+    .page__footer-copyright {
+      font-family: $sans-serif;
+      font-size: 0.75rem;
+      color: $gray;
+    }
+  }
+
+  // Video tag — match token colors
+  .video-background__tag {
+    background: $text-color;
+    color: $body-color;
+    font-family: $sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    border-radius: 0;
+  }
+}
+
+

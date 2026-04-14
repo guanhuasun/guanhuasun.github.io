@@ -1,0 +1,44 @@
+// Skin: modern-helvetica
+// IBM Carbon palette + Helvetica Neue (UI) and Charter (body).
+// Charter is loaded from Google Fonts; Helvetica Neue resolves locally on
+// macOS/iOS/Windows. Uppercase-letterspaced metadata instead of a mono font.
+//
+// Overrides _variables.scss defaults — imported before any consumers.
+
+// Typography
+$global-font-family   : 'Charter', Georgia, 'Times New Roman', serif;
+$header-font-family   : 'Helvetica Neue', Helvetica, Arial, -apple-system, sans-serif;
+$caption-font-family  : 'Charter', Georgia, serif;
+$sans-serif           : 'Helvetica Neue', Helvetica, Arial, -apple-system, sans-serif;
+$sans-serif-narrow    : $sans-serif;
+$serif                : 'Charter', Georgia, 'Times New Roman', serif;
+// No dedicated mono: metadata uses Helvetica with uppercase + letter-spacing
+// (applied via class rules, not via $monospace). Keep $monospace for code blocks.
+$monospace            : Menlo, Consolas, 'Courier New', monospace;
+
+// Colors — IBM Carbon tokens (shared with modern-plex)
+$background-color           : #ffffff;
+$body-color                 : #ffffff;
+$text-color                 : #161616;
+$code-background-color      : #f4f4f4;
+$code-background-color-dark : #e0e0e0;
+
+$gray                       : #525252;
+$dark-gray                  : #161616;
+$darker-gray                : #0b0b0b;
+$light-gray                 : #e0e0e0;
+$lighter-gray               : #f4f4f4;
+
+$primary-color              : #161616;
+$info-color                 : #0f62fe;
+
+$link-color                 : #0f62fe;
+$link-color-hover           : #0043ce;
+$link-color-visited         : #0f62fe;
+$masthead-link-color        : #161616;
+$masthead-link-color-hover  : #0f62fe;
+
+$border-color               : #e0e0e0;
+
+// Shape
+$border-radius              : 0;

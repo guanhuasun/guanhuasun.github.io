@@ -1,0 +1,21 @@
+{% include base_path %}
+
+<div class="home-header">
+  <div class="home-header__photo">
+    <img src="{{ site.author.avatar | prepend: '/images/' | prepend: base_path }}" alt="{{ site.author.name }}">
+  </div>
+  <div class="home-header__text">
+    <h1 class="home-header__name">{{ site.author.name }}</h1>
+    <ul class="home-header__links">
+      {% if site.author.email %}
+        <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a></li>
+      {% endif %}
+      {% if site.author.github %}
+        <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> Github</a></li>
+      {% endif %}
+      {% if site.author.googlescholar %}
+        <li><a href="{{ site.author.googlescholar }}"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</div>

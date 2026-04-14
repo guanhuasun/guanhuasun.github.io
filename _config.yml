@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-skin                     : "classic"  # classic, serif-academic, dark
+skin                     : "modern-plex"  # modern-plex, modern-helvetica, classic, serif-academic, dark
 locale                   : "en-US"
 title                    : "Guanhua Sun"
 title_separator          : "-"
