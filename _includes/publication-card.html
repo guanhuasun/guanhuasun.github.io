@@ -1,4 +1,5 @@
 {% include base_path %}
+{% assign primary_url = post.paperurl | default: post.puburl %}
 
 <div class="pub-card">
   {% if post.image %}
@@ -14,8 +15,8 @@
   {% endif %}
 
   <h3 class="pub-card__title">
-    {% if post.paperurl %}
-      <a href="{{ post.paperurl }}">{{ post.title }}</a>
+    {% if primary_url %}
+      <a href="{{ primary_url }}">{{ post.title }}</a>
     {% else %}
       {{ post.title }}
     {% endif %}
@@ -41,7 +42,7 @@
     {% if post.doi %}
       <a href="{{ post.doi }}" class="pub-card__link">DOI</a>
     {% endif %}
-    {% if post.puburl %}
+    {% if post.puburl and post.puburl != post.paperurl %}
       <a href="{{ post.puburl }}" class="pub-card__link">Link</a>
     {% endif %}
   </div>

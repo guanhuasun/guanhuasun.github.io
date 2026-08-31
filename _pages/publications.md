@@ -33,9 +33,10 @@ author_profile: true
 <h3 class="pub-year__heading">{{ year_group.name }}</h3>
 <ol class="pub-list">
   {% for post in year_group.items %}
+  {% assign primary_url = post.paperurl | default: post.puburl %}
   <li class="pub-list__item">
     <div class="pub-list__title">
-      {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}<span class="pub-list__links">{% if post.paperurl %}<a href="{{ post.paperurl }}">pdf</a>{% endif %}{% if post.arxiv %}<a href="{{ post.arxiv }}">arxiv</a>{% endif %}{% if post.doi %}<a href="{{ post.doi }}">doi</a>{% endif %}{% if post.puburl and post.puburl != post.paperurl %}<a href="{{ post.puburl }}">link</a>{% endif %}</span>
+      {% if primary_url %}<a href="{{ primary_url }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}<span class="pub-list__links">{% if post.paperurl %}<a href="{{ post.paperurl }}">pdf</a>{% endif %}{% if post.arxiv %}<a href="{{ post.arxiv }}">arxiv</a>{% endif %}{% if post.doi %}<a href="{{ post.doi }}">doi</a>{% endif %}{% if post.puburl and post.puburl != post.paperurl %}<a href="{{ post.puburl }}">link</a>{% endif %}</span>
     </div>
     <div class="pub-list__cite">
       {{ post.citation | default: post.venue }}
