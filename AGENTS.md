@@ -141,9 +141,16 @@ content -> single/archive -> default -> compress
   `arxiv` and `doi` fields produce their own link chips. Set `featured: true` to
   include an item in the featured grid.
 - Teaching records require `title`, `type`, `venue`, `date`, and `semester`.
-  Add `level: high-school` for outreach entries. The Teaching tables link each
-  title to its collection page, so a full syllabus can live directly in the
-  corresponding `_teaching/` item.
+  Add `level: high-school` for outreach entries. Set `has_materials: true` only
+  when the record has a substantive course page or external resource; the
+  Teaching tables render all other course titles as plain text.
+- The Fall 2026 Honors Linear Algebra syllabus is authored in
+  `C:\Users\sungu\Documents\Teaching\HonorsLinearAlgebra`. The repository path
+  `_includes/course-sources/honors-linear-algebra/Syllabus_Fall_2026.md` is an
+  NTFS hard link to the source file, so in-place edits appear immediately in the
+  Git working tree while Jekyll can still build in safe mode. GitHub Pages still
+  requires the changed file to be committed and pushed; a fresh clone receives
+  a normal file containing the last committed syllabus snapshot.
 - Update `_data/cv.yml` for structured CV sections instead of hard-coding those
   entries into `_pages/cv.md`.
 - Put downloadable documents in `files/` and images/video in `images/`.

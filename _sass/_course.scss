@@ -2,72 +2,112 @@
    Dedicated course and syllabus pages
    ========================================================================== */
 
+.page--compact {
+  .page__title {
+    margin-bottom: 8px;
+  }
+
+  .page__inner-wrap > header > p:last-child {
+    margin-bottom: 12px;
+  }
+}
+
 .course-page {
-  &__eyebrow {
-    margin: 0 0 8px !important;
+  font-size: 15px;
+  line-height: 1.5;
+
+  p {
+    margin-bottom: 10px !important;
+  }
+
+  ul,
+  ol {
+    margin-top: 6px;
+    margin-bottom: 12px;
+    padding-left: 1.4rem;
+  }
+
+  li + li {
+    margin-top: 2px;
+  }
+
+  // The linked source remains a useful standalone Markdown syllabus. The page
+  // layout already renders its title, so suppress the duplicate source title.
+  > h1:first-child {
+    display: none;
+  }
+
+  > h1:first-child + p {
+    margin: 0 0 20px !important;
     color: $gray;
-    font-family: $sans-serif;
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
+    font-family: $monospace;
+    font-size: 12px;
+    line-height: 1.55;
 
-  &__summary {
-    max-width: 760px;
-    margin-bottom: 16px !important;
-    font-size: 1.0625rem;
-    line-height: 1.6;
-  }
-
-  &__actions {
-    margin: 0 0 32px !important;
+    strong {
+      font-weight: 400;
+    }
   }
 
   h2 {
-    margin-top: 48px !important;
-    padding-bottom: 8px !important;
+    margin-top: 30px !important;
+    margin-bottom: 8px !important;
+    padding-bottom: 6px !important;
     border-bottom: 1px solid $border-color !important;
   }
 
   h3 {
-    margin-top: 32px !important;
+    margin-top: 22px !important;
+    margin-bottom: 6px !important;
   }
 
+  // Inspired by Mike O'Neil's Courant site: compact IBM Plex Mono text,
+  // generous column separation, and one quiet rule per row.
   table {
-    margin: 16px 0 32px;
+    width: 100%;
+    max-width: 100%;
+    margin: 12px 0 24px;
     border: 0;
-    font-size: 0.875rem;
+    border-collapse: collapse;
+    font-family: $monospace;
+    font-size: 13px;
+    line-height: 1.45;
   }
 
   thead {
     background: transparent;
-    border-bottom: 2px solid $text-color;
+    border: 0;
   }
 
-  th {
-    padding: 8px 12px 8px 0;
-    color: $text-color;
-    font-family: $sans-serif;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    border-right: 0;
-  }
-
+  th,
   td {
-    padding: 10px 12px 10px 0;
-    border-right: 0;
+    padding: 5px 15px;
+    border: 0;
     border-bottom: 1px solid $border-color;
     vertical-align: top;
   }
 
-  tbody tr:last-child td {
-    border-bottom: 0;
+  th {
+    color: $text-color;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: none;
   }
 
-  .course-info-table {
+  th:first-child,
+  td:first-child {
+    padding-left: 0;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 0;
+  }
+
+  // Course information is the first source table. Its empty Markdown header is
+  // structural only and should not occupy a row.
+  > table:first-of-type {
     max-width: 760px;
 
     thead {
@@ -77,68 +117,69 @@
     td:first-child {
       width: 34%;
       color: $gray;
-      font-family: $sans-serif;
-      font-size: 0.8125rem;
       font-weight: 500;
     }
   }
 
-  .course-grading-table {
-    max-width: 680px;
+  // Grading is the second source table.
+  > table:nth-of-type(2) {
+    max-width: 640px;
 
     th:last-child,
     td:last-child {
-      width: 96px;
+      width: 72px;
       text-align: right;
       font-variant-numeric: tabular-nums;
+      white-space: nowrap;
     }
   }
 
   .course-table-scroll {
     width: 100%;
-    margin-bottom: 32px;
+    margin: 12px 0 24px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 
     table {
-      min-width: 800px;
-      margin-bottom: 0;
+      min-width: 760px;
+      margin: 0;
     }
 
     th:first-child,
     td:first-child {
-      width: 56px;
+      width: 52px;
       font-variant-numeric: tabular-nums;
+      text-align: right;
     }
 
     th:nth-child(2),
     td:nth-child(2) {
-      width: 112px;
+      width: 104px;
       white-space: nowrap;
     }
 
     th:nth-child(3),
     td:nth-child(3) {
-      width: 168px;
+      width: 156px;
     }
   }
 
   @media (max-width: 600px) {
-    .course-info-table {
-      td {
-        display: block;
-        width: 100%;
-      }
+    font-size: 16px;
+    line-height: 1.55;
 
-      td:first-child {
-        width: 100%;
-        padding-bottom: 0;
-        border-bottom: 0;
-      }
+    > h1:first-child + p {
+      margin-bottom: 24px !important;
+    }
 
-      td:last-child {
-        padding-top: 4px;
-      }
+    > table:first-of-type td:first-child {
+      width: 42%;
+    }
+
+    th,
+    td {
+      padding-right: 10px;
+      padding-left: 10px;
     }
   }
 }

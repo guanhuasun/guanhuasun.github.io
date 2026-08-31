@@ -28,7 +28,13 @@ author_profile: true
     {% assign college = site.teaching | where_exp: "item", "item.level != 'high-school'" | sort: "date" | reverse %}
     {% for post in college %}
     <tr>
-      <td><a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a></td>
+      <td>
+        {% if post.has_materials %}
+          <a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a>
+        {% else %}
+          {{ post.title }}
+        {% endif %}
+      </td>
       <td>{{ post.type }}</td>
       <td>{{ post.venue }}</td>
       <td>{{ post.semester }} {{ post.date | date: "%Y" }}</td>
@@ -58,7 +64,13 @@ author_profile: true
     {% assign highschool = site.teaching | where: "level", "high-school" | sort: "date" | reverse %}
     {% for post in highschool %}
     <tr>
-      <td><a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a></td>
+      <td>
+        {% if post.has_materials %}
+          <a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a>
+        {% else %}
+          {{ post.title }}
+        {% endif %}
+      </td>
       <td>{{ post.type }}</td>
       <td>{{ post.venue }}</td>
       <td>{{ post.semester }} {{ post.date | date: "%Y" }}</td>
