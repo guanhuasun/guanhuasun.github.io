@@ -1,6 +1,7 @@
 ---
 title: "Honors Linear Algebra"
 collection: teaching
+published: false
 type: "Instructor"
 permalink: /teaching/honors-linear-algebra-fall-2026/
 venue: "NYU"
