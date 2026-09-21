@@ -11,9 +11,20 @@ redirect_from:
 
 <p><a href="{{ base_path }}/files/CV.pdf" class="btn">Download CV (PDF)</a></p>
 
-## Interests
+## Research Areas
 
-{{ site.data.cv.interests }}
+{{ site.data.cv.research_areas }}
+
+## Academic Appointments
+
+<ul>
+{% for item in site.data.cv.appointments %}
+  <li>
+    <strong>{{ item.title }}</strong>, {{ item.department }},
+    {{ item.institution }} ({{ item.years }}).
+  </li>
+{% endfor %}
+</ul>
 
 ## Education
 
@@ -71,7 +82,8 @@ redirect_from:
   <li>
     {{ item.role }},
     {% if item.url %}<a href="{{ item.url }}">{{ item.what }}</a>{% else %}{{ item.what }}{% endif %},
-    {{ item.org }} ({{ item.years }}).
+    {{ item.org }}{% if item.collaborators %}, {{ item.collaborators }}{% endif %}
+    ({{ item.years }}).
   </li>
 {% endfor %}
 </ul>
@@ -82,7 +94,7 @@ redirect_from:
   <li>
     {{ item.role }},
     {% if item.url %}<a href="{{ item.url }}">{{ item.org }}</a>{% else %}{{ item.org }}{% endif %}
-    ({{ item.years }}).
+    ({{ item.years }}).{% if item.description %}<br><em>{{ item.description }}</em>{% endif %}
   </li>
 {% endfor %}
 </ul>

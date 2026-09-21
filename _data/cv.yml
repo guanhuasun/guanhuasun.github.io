@@ -1,24 +1,29 @@
 # Structured CV data — rendered by _pages/cv.md.
 
-interests: >
-  My current research focuses on large-scale simulation of the mouse brain,
-  where I use advanced computational techniques to explore how network connectivity
-  and neuronal dynamics influence the collective behavior of the cortical network.
-  Prior to neuroscience, I worked on fluid-structure interaction problems in physics
-  and physiology. Besides research, I'm the co-founder of Veritas China (2015–),
-  the largest student-run non-profit organization that aims to promote liberal arts
-  education in China.
+research_areas: >
+  I work at the intersection of applied mathematics and computational neuroscience,
+  developing data-driven and mechanistic models of brain-wide neural and cerebrovascular
+  dynamics. I integrate connectomics and spatial transcriptomics with large-scale
+  simulation to investigate how network structure and neuronal dynamics shape collective
+  brain activity. Building on my background in scientific computing and fluid-structure
+  interaction, I study how neural activity couples to vascular signaling and blood flow
+  to understand the mechanisms of physiological regulation in the brain.
+
+appointments:
+  - title: "Courant Instructor/Assistant Professor"
+    department: "Department of Mathematics, Courant Institute of Mathematical Sciences"
+    institution: "New York University"
+    years: "2025–present"
 
 education:
-  - degree: "Ph.D., Applied Interdisciplinary Mathematics"
+  - degree: "Ph.D., Applied and Interdisciplinary Mathematics"
     institution: "University of Michigan"
-    years: "2025"
-    details: "Advisors: Daniel B. Forger and Brendon Watson"
+    years: "August 2025"
+    details: "Advisers: Daniel B. Forger and Brendon Watson"
 
   - degree: "B.A., Mathematics with Honors, Minor in Physics"
     institution: "New York University"
-    years: "2019"
-    details: "References: Charles Peskin, Leif Ristroph, and Miranda Holmes-Cerfon"
+    years: "May 2019"
 
 awards:
   - name: "Cameron & Jon Courtney Scholarship"
@@ -92,11 +97,13 @@ organization:
     what: "MCAIM Graduate Seminar"
     org: "University of Michigan"
     url: "https://lsa.umich.edu/math/seminars/seminars-and-colloquia/mcaim-graduate-seminar.html"
+    collaborators: "with Jiajia Guo and Shirlyn Wang"
     years: "2022–2023"
   - role: "Co-organizer"
     what: "Student Applied Math Seminar"
     org: "University of Michigan"
     url: "https://lsa.umich.edu/math/seminars/seminars-and-colloquia/student-aim-seminar.html"
+    collaborators: "with Kashvi Srivastava, Preetham Mohan, and C. Mavroyiakoumou"
     years: "2021–2023"
 
 professional:
@@ -104,3 +111,4 @@ professional:
     org: "Veritas China"
     url: "https://veritaschina.org"
     years: "2015–"
+    description: "Student-run nonprofit organization promoting liberal arts education in China."
