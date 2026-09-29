@@ -7,8 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
-<h2>College Courses</h2>
+<h2 id="college-courses">College Courses</h2>
 
+<p class="teaching-table-hint">Scroll tables horizontally to view all columns.</p>
+<div class="teaching-table-scroll" role="region" aria-labelledby="college-courses" tabindex="0">
 <table class="teaching-table">
   <colgroup>
     <col style="width:35%">
@@ -42,9 +44,11 @@ author_profile: true
     {% endfor %}
   </tbody>
 </table>
+</div>
 
-<h2>Outreach</h2>
+<h2 id="outreach">Outreach</h2>
 
+<div class="teaching-table-scroll" role="region" aria-labelledby="outreach" tabindex="0">
 <table class="teaching-table">
   <colgroup>
     <col style="width:35%">
@@ -78,3 +82,4 @@ author_profile: true
     {% endfor %}
   </tbody>
 </table>
+</div>

@@ -5,6 +5,8 @@ permalink: /projects/
 author_profile: true
 ---
 
-## Interactive Simulations
+## [Interactive 2/3D Immersed Boundary Method](https://guanhuasun.github.io/ib-sim/)
 
-**[2D Immersed Boundary Method](https://guanhuasun.github.io/ib-sim/)** --- Real-time simulation of Peskin's immersed boundary method running entirely in the browser via WebGPU. An elastic membrane is coupled to an incompressible Navier-Stokes fluid through regularized delta functions, solved with an FFT-based IMEX scheme. [[source]](https://github.com/guanhuasun/ib-sim)
+Interactive simulations of Peskin's immersed boundary method running entirely in the browser via WebGPU. An elastic curve in 2D or a triangulated elastic shell in 3D is coupled to an incompressible Navier–Stokes fluid through regularized delta functions, with FFT-based fluid solves and two-stage IMEX time integration.
+
+*Requires a browser with WebGPU support.*
