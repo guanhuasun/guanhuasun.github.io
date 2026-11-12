@@ -191,6 +191,11 @@ collections:
 
 # Defaults
 defaults:
+  # Unlisted lecture files are served directly, without public sitemap entries.
+  - scope:
+      path: "lectures/neuron-planet"
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""
